@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
-import {styled} from 'fusion-plugin-styletron-react';
+import { styled } from 'fusion-plugin-styletron-react';
+import {assetUrl} from 'fusion-core';
+
 
 const Center = styled('div', {
   fontFamily: 'HelveticaNeue-Light, Arial',
@@ -58,14 +60,10 @@ const Home = () => (
         `}
     </style>
     <Center>
-      <FusionStyle>Fusion.js</FusionStyle>
+
 
       <Center>
-        <Circle>
-          <GettingStartedLink href="https://fusionjs.com/docs/overview">
-            Let&apos;s Get Started
-          </GettingStartedLink>
-        </Circle>
+        <img src={assetUrl('../static/ray-logo.png')}/>
       </Center>
     </Center>
   </FullHeightDiv>
